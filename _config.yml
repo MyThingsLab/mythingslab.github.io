@@ -1,0 +1,25 @@
+title: MyThingsLab
+description: >-
+  Technical documentation for the MyThingsLab fleet — an SDK plus a line of
+  autonomous My[X] dev tools.
+
+url: "https://mythingslab.github.io"
+baseurl: ""
+
+remote_theme: "just-the-docs/just-the-docs"
+
+plugins:
+  - jekyll-remote-theme
+
+collections:
+  tools:
+    output: true
+    permalink: /tools/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "tools"
+    values:
+      layout: default
+      parent: Tools
