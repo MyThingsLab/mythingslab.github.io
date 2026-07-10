@@ -95,14 +95,14 @@ footer code { background: var(--pill-bg); padding: .05rem .35rem; border-radius:
 <main>
   <header class="masthead">
     <div class="eyebrow">MyThingsLab · fleet dashboard</div>
-    <h1>37 tools, one loop</h1>
+    <h1>40 tools, one loop</h1>
   </header>
 
   <div class="tiles">
-    <div class="tile"><div class="k">Repos</div><div class="v">37</div><div class="d">across 3 shelves</div></div>
-    <div class="tile"><div class="k">CI on main</div><div class="v">28<span class="unit">/37</span></div><div class="d">9 no CI</div></div>
-    <div class="tile"><div class="k">Open PRs</div><div class="v">26</div><div class="d">across the fleet</div></div>
-    <div class="tile"><div class="k">Open issues</div><div class="v">72</div><div class="d">across the backlog</div></div>
+    <div class="tile"><div class="k">Repos</div><div class="v">40</div><div class="d">across 3 shelves</div></div>
+    <div class="tile"><div class="k">CI on main</div><div class="v">40<span class="unit">/40</span></div><div class="d">all green</div></div>
+    <div class="tile"><div class="k">Open PRs</div><div class="v">0</div><div class="d">across the fleet</div></div>
+    <div class="tile"><div class="k">Open issues</div><div class="v">113</div><div class="d">across the backlog</div></div>
   </div>
 
   <section class="shelf">
@@ -114,19 +114,31 @@ footer code { background: var(--pill-bg); padding: .05rem .35rem; border-radius:
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-things-core">my-things-core</a></div>
         <p class="purpose">(no purpose seam found)</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill warn">11 PR</span><span class="pill">14 issues</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">8 issues</span></div>
         <div class="last">build: append-only JSONL ledger — the shared-memory contract every tool writes to (2026-07-06T11:57:24Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/fleet-dispatch">fleet-dispatch</a></div>
         <p class="purpose">(no purpose seam found)</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill warn">2 PR</span><span class="pill">13 issues</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">12 issues</span></div>
         <div class="last">build: Fleet cycle now briefs a bounded number (--brief-count, default 1) of open my-researcher topics in MyThingsLab/study per cycle: gh-selected oldest-first, skipping issues with a pending my-researcher/&lt;N&gt; brief PR, arxiv-only sources (no TAVILY_API_KEY on host), first fleet account&#x27;s CLAUDE_CONFIG_DIR, mutation gated on --execute. (2026-07-09T09:56:22Z)</div>
+      </div>
+      <div class="tool">
+        <div class="name"><a href="https://github.com/MyThingsLab/my-dashboard">my-dashboard</a></div>
+        <p class="purpose">Renders the fleet&#x27;s status two ways — an org-wide front page</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
+        <div class="last">build: adopted the user-approved claude.ai artifact mockup as the real render output: dashboard/index.html (cards, pills, tiles, unshelved drift section) replaces the markdown table; Engine banner prompt stays the deterministic markdown table (2026-07-09T13:14:27Z)</div>
+      </div>
+      <div class="tool">
+        <div class="name"><a href="https://github.com/MyThingsLab/my-orchestrator">my-orchestrator</a></div>
+        <p class="purpose">reads every backlog across the fleet — open issues per repo, and</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">1 issue</span></div>
+        <div class="last">build: wire MyPlanner kind=plan signal into ranking (horizon boosts + pause-new-tools penalty); add my-projector/my-planner to manifest (2026-07-07T19:04:39Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-template">my-template</a></div>
         <p class="purpose">&lt;one line — what this tool does&gt;</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill warn">3 PR</span><span class="pill">0 issues</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
         <div class="last">scaffold: scaffold my-template: canonical My[X] tool template — verbatim-shared seams (pyproject, ci.yml, gitignore, LICENSE, pre-commit, vendored HARNESS.md, drift test, dev-ledger) with &#x27;template&#x27; placeholder; installs and passes ruff+pytest green out of the box (2026-07-06T16:52:05Z)</div>
       </div>
       <div class="tool">
@@ -160,12 +172,6 @@ footer code { background: var(--pill-bg); padding: .05rem .35rem; border-radius:
         <div class="last">build: MyPlanner v0: context assembly + truncation, required Engine call, kind=plan ledger, tracking-issue section upsert (2026-07-07T18:58:19Z)</div>
       </div>
       <div class="tool">
-        <div class="name"><a href="https://github.com/MyThingsLab/my-orchestrator">my-orchestrator</a></div>
-        <p class="purpose">reads every backlog across the fleet — open issues per repo, and</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill warn">1 PR</span><span class="pill">1 issue</span></div>
-        <div class="last">build: wire MyPlanner kind=plan signal into ranking (horizon boosts + pause-new-tools penalty); add my-projector/my-planner to manifest (2026-07-07T19:04:39Z)</div>
-      </div>
-      <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-guard">my-guard</a></div>
         <p class="purpose">the rule engine — evaluates an `Action` to allow / ask / deny,</p>
         <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
@@ -176,12 +182,6 @@ footer code { background: var(--pill-bg); padding: .05rem .35rem; border-radius:
         <p class="purpose">reads a target repo&#x27;s `dev-ledger/` entries since the last</p>
         <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
         <div class="last">ship: pushed to github.com/MyThingsLab/my-changelogger; PR #1 opened, CI green on first push (2026-07-07T02:57:36Z)</div>
-      </div>
-      <div class="tool">
-        <div class="name"><a href="https://github.com/MyThingsLab/my-dashboard">my-dashboard</a></div>
-        <p class="purpose">Renders the fleet&#x27;s status two ways — an org-wide front page</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
-        <div class="last">build: adopted the user-approved claude.ai artifact mockup as the real render output: dashboard/index.html (cards, pills, tiles, unshelved drift section) replaces the markdown table; Engine banner prompt stays the deterministic markdown table (2026-07-09T13:14:27Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-docs">my-docs</a></div>
@@ -201,19 +201,19 @@ footer code { background: var(--pill-bg); padding: .05rem .35rem; border-radius:
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-server">my-server</a></div>
         <p class="purpose">surfaces the fleet — a read-only view of the shared ledger, plus</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill warn">1 PR</span><span class="pill">0 issues</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
         <div class="last">feature: HTTP/JSON API over the tools: GET /tools, GET /tools/{name}, POST /tools/{name}/issues (enqueue labeled backlog issue, fail-closed bearer-token gated); + coverage step (stale-template fix). 29 tests green (2026-07-08T00:22:37Z)</div>
+      </div>
+      <div class="tool">
+        <div class="name"><a href="https://github.com/MyThingsLab/my-telegram-bot">my-telegram-bot</a></div>
+        <p class="purpose">bridges the harness to the user over Telegram: pushes ledger</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">1 issue</span></div>
+        <div class="last">ship: live end-to-end ask-flow verified: real Telegram message sent, user tapped Allow, TelegramPolicy.evaluate() resolved decision=allow in ~3.5s via manual-ask-test.yml workflow_dispatch run 28840280628. Confirms the getUpdates client-timeout fix (PR #5) actually closed the loop, not just passed unit tests (2026-07-07T03:54:38Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/mythingslab.github.io">mythingslab.github.io</a></div>
         <p class="purpose">(no purpose seam found)</p>
         <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
-      </div>
-      <div class="tool">
-        <div class="name"><a href="https://github.com/MyThingsLab/my-telegram-bot">my-telegram-bot</a></div>
-        <p class="purpose">bridges the harness to the user over Telegram: pushes ledger</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
-        <div class="last">ship: live end-to-end ask-flow verified: real Telegram message sent, user tapped Allow, TelegramPolicy.evaluate() resolved decision=allow in ~3.5s via manual-ask-test.yml workflow_dispatch run 28840280628. Confirms the getUpdates client-timeout fix (PR #5) actually closed the loop, not just passed unit tests (2026-07-07T03:54:38Z)</div>
       </div>
     </div>
   </section>
@@ -225,27 +225,33 @@ footer code { background: var(--pill-bg); padding: .05rem .35rem; border-radius:
     </div>
     <div class="grid">
       <div class="tool">
-        <div class="name"><a href="https://github.com/MyThingsLab/my-researcher">my-researcher</a></div>
-        <p class="purpose">given a topic issue, discovers external sources **live** (web</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
-        <div class="last">scaffold: Scaffolded my-researcher from my-template and implemented the brief+plan tool (live arXiv/Tavily retrieval, one-Engine-call synthesis, Workspace PR + guarded comment paths, ledger); 23 tests passing, ruff clean. (2026-07-07T19:57:01Z)</div>
-      </div>
-      <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-archivist">my-archivist</a></div>
         <p class="purpose">maintains a unified catalog of a personal book/materials</p>
         <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
         <div class="last">scaffold: copied my-template; built scanner/enrich/catalog/classify/render/archivist/cli (2026-07-08T17:58:02Z)</div>
       </div>
       <div class="tool">
-        <div class="name"><a href="https://github.com/MyThingsLab/my-idea">my-idea</a></div>
-        <p class="purpose">explores a rough idea (a `my-idea`-labeled issue) against the</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">12 issues</span></div>
-        <div class="last">fix: file_idea() now creates the my-idea label (idempotent, --force) and retries once when add_labels fails on a fresh repo that has no my-idea label yet (2026-07-09T15:21:23Z)</div>
+        <div class="name"><a href="https://github.com/MyThingsLab/my-researcher">my-researcher</a></div>
+        <p class="purpose">given a topic issue, discovers external sources **live** (web</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
+        <div class="last">scaffold: Scaffolded my-researcher from my-template and implemented the brief+plan tool (live arXiv/Tavily retrieval, one-Engine-call synthesis, Workspace PR + guarded comment paths, ledger); 23 tests passing, ruff clean. (2026-07-07T19:57:01Z)</div>
+      </div>
+      <div class="tool">
+        <div class="name"><a href="https://github.com/MyThingsLab/my-scraper">my-scraper</a></div>
+        <p class="purpose">given a URL and a question, fetch the page deterministically and</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
+        <div class="last">build: implemented extract: fetcher + scraper + cli, 23 tests green (2026-07-08T17:25:20Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-uni">my-uni</a></div>
         <p class="purpose">given a &quot;field of study&quot; issue, decomposes the field into a</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill warn">1 PR</span><span class="pill">1 issue</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
+      </div>
+      <div class="tool">
+        <div class="name"><a href="https://github.com/MyThingsLab/my-idea">my-idea</a></div>
+        <p class="purpose">explores a rough idea (a `my-idea`-labeled issue) against the</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">61 issues</span></div>
+        <div class="last">fix: file_idea() now creates the my-idea label (idempotent, --force) and retries once when add_labels fails on a fresh repo that has no my-idea label yet (2026-07-09T15:21:23Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-presentation">my-presentation</a></div>
@@ -276,30 +282,31 @@ footer code { background: var(--pill-bg); padding: .05rem .35rem; border-radius:
         <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
         <div class="last">scaffold: copied my-template; built registries/recommend/librarian/cli (2026-07-08T17:37:15Z)</div>
       </div>
-      <div class="tool">
-        <div class="name"><a href="https://github.com/MyThingsLab/my-scraper">my-scraper</a></div>
-        <p class="purpose">given a URL and a question, fetch the page deterministically and</p>
-        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span></div>
-        <div class="last">build: implemented extract: fetcher + scraper + cli, 23 tests green (2026-07-08T17:25:20Z)</div>
-      </div>
     </div>
   </section>
 
   <section class="shelf unshelved">
     <div class="shelf-head">
-      <h2>Unshelved</h2><span class="count">11 tools</span>
+      <h2>Unshelved</h2><span class="count">14 tools</span>
     </div>
     <p class="callout">⚠ Drift made visible, not silent: a new repo lands here until it is classified in shelves.toml.</p>
     <div class="grid">
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/.github">.github</a></div>
         <p class="purpose">(no purpose seam found)</p>
-        <div class="pills"><span class="pill">— CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+      </div>
+      <div class="tool">
+        <div class="name"><a href="https://github.com/MyThingsLab/my-bibliography">my-bibliography</a></div>
+        <p class="purpose">given a reference-request issue (`doi:`, `arxiv:`, `isbn:`, or</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="last">scaffold: initialized from my-template via scripts/init.py (2026-07-09T19:06:59Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-coder">my-coder</a></div>
-        <p class="purpose">(no purpose seam found)</p>
-        <div class="pills"><span class="pill">— CI</span><span class="pill warn">1 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <p class="purpose">takes one picked issue (a `Candidate` from `my-orchestrator`,</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="last">build: filled CLAUDE.md seams; own-contract worker tool, no Engine call (2026-07-09T09:15:26Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-data-analysist">my-data-analysist</a></div>
@@ -308,21 +315,33 @@ footer code { background: var(--pill-bg); padding: .05rem .35rem; border-radius:
         <div class="last">build: implemented analyze: profiler + analysist + cli, 21 tests green (2026-07-09T15:54:00Z)</div>
       </div>
       <div class="tool">
+        <div class="name"><a href="https://github.com/MyThingsLab/my-glossary">my-glossary</a></div>
+        <p class="purpose">defines a term from a document corpus (PDFs, notes, slides) and</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="last">scaffold: initialized from my-template (2026-07-10T15:19:34Z)</div>
+      </div>
+      <div class="tool">
+        <div class="name"><a href="https://github.com/MyThingsLab/my-guide">my-guide</a></div>
+        <p class="purpose">the fleet&#x27;s front door for someone who has never opened a</p>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="last">scaffold: initialized from my-template via scripts/init.py (2026-07-09T21:06:53Z)</div>
+      </div>
+      <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-image-processor">my-image-processor</a></div>
         <p class="purpose">given a local image file, deterministically extract dimensions,</p>
-        <div class="pills"><span class="pill">— CI</span><span class="pill warn">1 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
         <div class="last">scaffold: copied my-template (2026-07-09T18:34:30Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-manim-editor">my-manim-editor</a></div>
         <p class="purpose">given a natural-language animation concept, run one Engine call</p>
-        <div class="pills"><span class="pill">— CI</span><span class="pill warn">1 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
         <div class="last">scaffold: initialized from my-template; wired render CLI per my-things-core PR #63 design doc (2026-07-09T18:33:57Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-notes">my-notes</a></div>
         <p class="purpose">a personal freeform note-capture tool — a note is filed as a</p>
-        <div class="pills"><span class="pill">— CI</span><span class="pill warn">1 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
         <div class="last">build: implemented mynotes tag: issue-driven note tagging via one Engine call (2026-07-09T18:34:36Z)</div>
       </div>
       <div class="tool">
@@ -333,23 +352,23 @@ footer code { background: var(--pill-bg); padding: .05rem .35rem; border-radius:
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/my-signal-processor">my-signal-processor</a></div>
         <p class="purpose">given a local CSV time-series file, compute an FFT power</p>
-        <div class="pills"><span class="pill">— CI</span><span class="pill warn">1 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
         <div class="last">scaffold: initialized from my-template via scripts/init.py; built analyze CLI with FFT/stats + one Engine call (2026-07-09T18:35:05Z)</div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/study">study</a></div>
         <p class="purpose">(no purpose seam found)</p>
-        <div class="pills"><span class="pill">— CI</span><span class="pill warn">2 PR</span><span class="pill">23 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">22 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/typst-personal-docs">typst-personal-docs</a></div>
         <p class="purpose">(no purpose seam found)</p>
-        <div class="pills"><span class="pill">— CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
       </div>
       <div class="tool">
         <div class="name"><a href="https://github.com/MyThingsLab/typst-templates">typst-templates</a></div>
         <p class="purpose">(no purpose seam found)</p>
-        <div class="pills"><span class="pill">— CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
+        <div class="pills"><span class="pill good">✓ CI</span><span class="pill">0 PR</span><span class="pill">0 issues</span><span class="pill warn">⚠ not in shelves.toml</span></div>
       </div>
     </div>
   </section>
