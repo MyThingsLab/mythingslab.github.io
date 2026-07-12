@@ -1,13 +1,14 @@
 ---
 layout: null
-title: Home
+title: Tools
+permalink: /tools/
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MyThingsLab — an SDK and a fleet of autonomous tools</title>
+<title>All tools · MyThingsLab</title>
 <style>
 @charset "UTF-8";
 :root,:host{--pico-font-family-emoji:"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--pico-font-family-sans-serif:system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,Helvetica,Arial,"Helvetica Neue",sans-serif,var(--pico-font-family-emoji);--pico-font-family-monospace:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace,var(--pico-font-family-emoji);--pico-font-family:var(--pico-font-family-sans-serif);--pico-line-height:1.5;--pico-font-weight:400;--pico-font-size:100%;--pico-text-underline-offset:0.1rem;--pico-border-radius:0.25rem;--pico-border-width:0.0625rem;--pico-outline-width:0.125rem;--pico-transition:0.2s ease-in-out;--pico-spacing:1rem;--pico-typography-spacing-vertical:1rem;--pico-block-spacing-vertical:var(--pico-spacing);--pico-block-spacing-horizontal:var(--pico-spacing);--pico-form-element-spacing-vertical:0.75rem;--pico-form-element-spacing-horizontal:1rem;--pico-group-box-shadow:0 0 0 rgba(0,0,0,0);--pico-nav-element-spacing-vertical:1rem;--pico-nav-element-spacing-horizontal:0.5rem;--pico-nav-link-spacing-vertical:0.5rem;--pico-nav-link-spacing-horizontal:0.5rem;--pico-nav-breadcrumb-divider:">"}
@@ -47,29 +48,20 @@ h1{--pico-color:var(--pico-h1-color)}
 h2{--pico-color:var(--pico-h2-color)}
 h3{--pico-color:var(--pico-h3-color)}
 h4{--pico-color:var(--pico-h4-color)}
-h5{--pico-color:var(--pico-h5-color)}
-h6{--pico-color:var(--pico-h6-color)}
 :where(article,address,blockquote,dl,figure,form,ol,p,pre,table,ul)~:is(h1,h2,h3,h4,h5,h6){margin-top:var(--pico-typography-spacing-top)}
 p{margin-bottom:var(--pico-typography-spacing-vertical)}
 hgroup{margin-bottom:var(--pico-typography-spacing-vertical)}
 hgroup>*{margin-top:0;margin-bottom:0}
 hgroup>*:not(:first-child):last-child{--pico-color:var(--pico-muted-color);--pico-font-weight:unset;font-size:1rem}
-:where(ol,ul) li{margin-bottom:calc(var(--pico-typography-spacing-vertical) * .25)}
-ul li{list-style:square}
 :where(a:not([role=button])),[role=link]{--pico-color:var(--pico-primary);--pico-background-color:transparent;--pico-underline:var(--pico-primary-underline);outline:none;background-color:var(--pico-background-color);color:var(--pico-color);text-decoration:var(--pico-text-decoration);text-decoration-color:var(--pico-underline);text-underline-offset:.125em;transition:background-color var(--pico-transition),color var(--pico-transition),text-decoration var(--pico-transition),box-shadow var(--pico-transition)}
 :where(a:not([role=button])):is([aria-current]:not([aria-current=false]),:hover,:active,:focus),[role=link]:is([aria-current]:not([aria-current=false]),:hover,:active,:focus){--pico-color:var(--pico-primary-hover);--pico-underline:var(--pico-primary-hover-underline);--pico-text-decoration:underline}
-:where(a:not([role=button])):focus-visible,[role=link]:focus-visible{box-shadow:0 0 0 var(--pico-outline-width) var(--pico-primary-focus)}
 a[role=button]{display:inline-block}
 button{margin:0;overflow:visible;font-family:inherit;text-transform:none}
 button,[type=submit],[type=reset],[type=button]{-webkit-appearance:button}
-button,[type=submit],[type=reset],[type=button],[type=file]::file-selector-button,[role=button]{--pico-background-color:var(--pico-primary-background);--pico-border-color:var(--pico-primary-border);--pico-color:var(--pico-primary-inverse);--pico-box-shadow:var(--pico-button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);border:var(--pico-border-width) solid var(--pico-border-color);border-radius:var(--pico-border-radius);outline:none;background-color:var(--pico-background-color);box-shadow:var(--pico-box-shadow);color:var(--pico-color);font-weight:var(--pico-font-weight);font-size:1rem;line-height:var(--pico-line-height);text-align:center;text-decoration:none;cursor:pointer;user-select:none;transition:background-color var(--pico-transition),border-color var(--pico-transition),color var(--pico-transition),box-shadow var(--pico-transition)}
-button:is([aria-current]:not([aria-current=false])),button:is(:hover,:active,:focus),[type=submit]:is(:hover,:active,:focus),[role=button]:is(:hover,:active,:focus){--pico-background-color:var(--pico-primary-hover-background);--pico-border-color:var(--pico-primary-hover-border);--pico-box-shadow:var(--pico-button-hover-box-shadow,0 0 0 rgba(0,0,0,0));--pico-color:var(--pico-primary-inverse)}
-button:focus,[role=button]:focus{--pico-box-shadow:var(--pico-button-hover-box-shadow,0 0 0 rgba(0,0,0,0)),0 0 0 var(--pico-outline-width) var(--pico-primary-focus)}
-[type=submit],[type=reset],[type=button]{margin-bottom:var(--pico-spacing)}
-:where(button,[type=submit],[type=reset],[type=button],[role=button])[disabled]{opacity:.5;pointer-events:none}
+button,[type=submit],[type=reset],[type=button],[role=button]{--pico-background-color:var(--pico-primary-background);--pico-border-color:var(--pico-primary-border);--pico-color:var(--pico-primary-inverse);--pico-box-shadow:var(--pico-button-box-shadow,0 0 0 rgba(0,0,0,0));padding:var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);border:var(--pico-border-width) solid var(--pico-border-color);border-radius:var(--pico-border-radius);outline:none;background-color:var(--pico-background-color);box-shadow:var(--pico-box-shadow);color:var(--pico-color);font-weight:var(--pico-font-weight);font-size:1rem;line-height:var(--pico-line-height);text-align:center;text-decoration:none;cursor:pointer;user-select:none;transition:background-color var(--pico-transition),border-color var(--pico-transition),color var(--pico-transition),box-shadow var(--pico-transition)}
+button:is([aria-current]:not([aria-current=false])),button:is(:hover,:active,:focus),[role=button]:is([aria-current]:not([aria-current=false])),[role=button]:is(:hover,:active,:focus){--pico-background-color:var(--pico-primary-hover-background);--pico-border-color:var(--pico-primary-hover-border);--pico-color:var(--pico-primary-inverse)}
 article{margin-bottom:var(--pico-block-spacing-vertical);padding:var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal);border-radius:var(--pico-border-radius);background:var(--pico-card-background-color);box-shadow:var(--pico-card-box-shadow)}
 article>header,article>footer{margin-right:calc(var(--pico-block-spacing-horizontal) * -1);margin-left:calc(var(--pico-block-spacing-horizontal) * -1);padding:calc(var(--pico-block-spacing-vertical) * .66) var(--pico-block-spacing-horizontal);background-color:var(--pico-card-sectioning-background-color)}
-article>header{margin-top:calc(var(--pico-block-spacing-vertical) * -1);margin-bottom:var(--pico-block-spacing-vertical);border-bottom:var(--pico-border-width) solid var(--pico-card-border-color);border-top-right-radius:var(--pico-border-radius);border-top-left-radius:var(--pico-border-radius)}
 :where(nav li)::before{float:left;content:"​"}
 nav,nav ul{display:flex}
 nav{justify-content:space-between;overflow:visible}
@@ -83,7 +75,6 @@ nav li :where(a,[role=link]):not(:hover){text-decoration:none}
 [aria-disabled=true],[disabled]{cursor:not-allowed}
 a,button,[role=button],[tabindex]{-ms-touch-action:manipulation}
 
-/* animate.css subset */
 :root{--animate-duration:1s;--animate-delay:1s;--animate-repeat:1}
 .animate__animated{animation-duration:1s;animation-duration:var(--animate-duration);animation-fill-mode:both}
 @keyframes fadeIn{0%{opacity:0}to{opacity:1}}
@@ -92,97 +83,79 @@ a,button,[role=button],[tabindex]{-ms-touch-action:manipulation}
 .animate__fadeInUp{animation-name:fadeInUp}
 @keyframes fadeInDown{0%{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:translateZ(0)}}
 .animate__fadeInDown{animation-name:fadeInDown}
-@keyframes pulse{0%{transform:scaleX(1)}50%{transform:scale3d(1.05,1.05,1.05)}to{transform:scaleX(1)}}
-.animate__pulse{animation-name:pulse;animation-timing-function:ease-in-out}
 
-/* Page-specific layout, on top of Pico primitives */
-.hero {
-  text-align: center;
-  padding: 3.5rem 1rem 2.5rem;
+/* Page-specific additions */
+.status-pill{
+  display:inline-block;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+  padding:.15rem .55rem;
+  border-radius:5rem;
+  line-height:1.6;
+  vertical-align:middle;
 }
-.hero p.lede {
-  max-width: 640px;
-  margin: 0 auto 1.5rem;
-  color: var(--pico-muted-color);
-  font-size: 1.15rem;
+.status-shipped{
+  background-color:var(--pico-primary-background);
+  color:var(--pico-primary-inverse);
 }
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
+.status-building{
+  background-color:var(--pico-secondary-background);
+  color:var(--pico-secondary-inverse);
 }
-.hero-actions a[role=button] { margin-bottom: 0; }
-.secondary-btn {
-  --pico-background-color: transparent;
-  --pico-border-color: var(--pico-primary-border);
-  --pico-color: var(--pico-primary);
+.status-designed{
+  background-color:transparent;
+  color:var(--pico-muted-color);
+  border:var(--pico-border-width) solid var(--pico-muted-border-color);
 }
-.secondary-btn:hover {
-  --pico-background-color: var(--pico-primary-focus);
-  --pico-color: var(--pico-primary);
+.tool-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:1rem;
 }
-.loop-note {
-  max-width: 720px;
-  margin: 2rem auto 0;
-  padding: 1rem 1.25rem;
-  border: var(--pico-border-width) dashed var(--pico-muted-border-color);
-  border-radius: var(--pico-border-radius);
-  font-size: .9rem;
-  color: var(--pico-muted-color);
-  text-align: left;
+.tool-grid a{
+  color:inherit;
+  text-decoration:none;
+  display:block;
 }
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  text-align: center;
-  margin: 2rem 0;
+.tool-grid a:hover article{
+  box-shadow:0 0 0 var(--pico-outline-width) var(--pico-primary-focus);
 }
-.stats article { margin-bottom: 0; }
-.stat-number {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--pico-primary);
-  display: block;
-  line-height: 1.1;
+.tool-grid article{
+  margin-bottom:0;
+  display:flex;
+  flex-direction:column;
+  gap:.35rem;
 }
-.stat-label {
-  color: var(--pico-muted-color);
-  font-size: .95rem;
+.tool-card-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:.5rem;
 }
-.tool-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+.tool-card-head h4{
+  margin-bottom:0;
 }
-.tool-grid article { margin-bottom: 0; }
-.tool-grid a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
+.tool-card-desc{
+  color:var(--pico-muted-color);
+  font-size:.92rem;
+  margin-bottom:0;
 }
-.tool-grid a:hover article {
-  box-shadow: 0 0 0 var(--pico-outline-width) var(--pico-primary-focus);
+.section-heading{
+  display:flex;
+  align-items:baseline;
+  gap:.6rem;
+  margin-bottom:1rem;
 }
-.tool-name {
-  font-family: var(--pico-font-family-monospace);
-  font-weight: 700;
-  color: var(--pico-h4-color);
+.section-heading small{
+  color:var(--pico-muted-color);
 }
-.tool-desc {
-  color: var(--pico-muted-color);
-  margin-bottom: 0;
-  margin-top: .5rem;
+.top-links{
+  margin-top:2.5rem;
+  padding-top:1rem;
+  border-top:var(--pico-border-width) solid var(--pico-muted-border-color);
 }
-footer.site-footer {
-  text-align: center;
-  color: var(--pico-muted-color);
-  border-top: var(--pico-border-width) solid var(--pico-muted-border-color);
-  padding-top: 1.5rem;
-}
-footer.site-footer a { margin: 0 .5rem; }
 </style>
 </head>
 <body>
@@ -193,110 +166,62 @@ footer.site-footer a { margin: 0 .5rem; }
       <li><strong>MyThingsLab</strong></li>
     </ul>
     <ul>
-      <li><a href="/tools/">Tools</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/tools/" aria-current="page">Tools</a></li>
       <li><a href="https://mythingslab.github.io/dashboard">Dashboard</a></li>
-      <li><a href="https://github.com/MyThingsLab">GitHub</a></li>
     </ul>
   </nav>
 </header>
 
 <main class="container">
 
-  <section class="hero animate__animated animate__fadeInUp">
-    <hgroup>
-      <h1>MyThingsLab</h1>
-      <p>One SDK. A growing fleet of autonomous tools.</p>
-    </hgroup>
-    <p class="lede">
-      <strong>my-things-core</strong> is the shared SDK — five contracts and a
-      build harness — that every <strong>My[X]</strong> tool in the fleet is
-      scaffolded from. Each tool runs the same loop, end to end, without a
-      human in the write path until review.
-    </p>
+  <hgroup>
+    <h1>All tools</h1>
+    <p>Every My[X] tool in the fleet, grouped by where it is in the build.</p>
+  </hgroup>
 
-    <div class="loop-note">
-      <strong>The harness loop, every tool, every time:</strong>
-      read a GitHub issue → deterministic pre-work → one Engine call →
-      open a PR. Never a self-merge — a human always merges.
+{% assign statuses = "shipped,building,designed" | split: "," %}
+{% for status in statuses %}
+  {% assign items = site.data.tools_manifest | where: "status", status | sort: "repo" %}
+  {% if items.size > 0 %}
+  <section class="animate__animated animate__fadeInUp">
+    <div class="section-heading">
+      <h2>{{ status | capitalize }}</h2>
+      <small>
+        {% if status == "shipped" %}live on <code>main</code>, green CI
+        {% elsif status == "building" %}open genesis PR, not merged yet
+        {% else %}design doc exists, not built yet{% endif %}
+      </small>
     </div>
-
-    <div class="hero-actions">
-      <a href="https://mythingslab.github.io/dashboard" role="button">Open the live dashboard</a>
-      <a href="https://github.com/MyThingsLab" role="button" class="secondary-btn">View the GitHub org</a>
-    </div>
-  </section>
-
-  <section class="stats">
-    <article class="animate__animated animate__fadeIn" style="animation-delay:0.05s">
-      <span class="stat-number">47</span>
-      <span class="stat-label">tools scaffolded</span>
-    </article>
-    <article class="animate__animated animate__fadeIn" style="animation-delay:0.15s">
-      <span class="stat-number">23</span>
-      <span class="stat-label">shipped to main</span>
-    </article>
-    <article class="animate__animated animate__fadeIn" style="animation-delay:0.25s">
-      <span class="stat-number">1</span>
-      <span class="stat-label">shared SDK</span>
-    </article>
-  </section>
-
-  <section id="showcase">
-    <hgroup>
-      <h2>A few tools from the fleet</h2>
-      <p>Each one built from the same harness, each one doing one thing.</p>
-    </hgroup>
-
     <div class="tool-grid">
-      <a href="https://github.com/MyThingsLab/my-dashboard" class="animate__animated animate__fadeIn" style="animation-delay:0.1s">
+      {% for entry in items %}
+      {% if status == "designed" %}
+      <a href="https://github.com/MyThingsLab/my-things-core/blob/main/docs/tools/{{ entry.repo }}.md">
+      {% else %}
+      <a href="https://github.com/MyThingsLab/{{ entry.repo }}">
+      {% endif %}
         <article>
-          <span class="tool-name">MyDashboard</span>
-          <p class="tool-desc">Renders the fleet's status page — every tool, every PR, at a glance.</p>
+          <div class="tool-card-head">
+            <h4>{{ entry.tool }}</h4>
+            <span class="status-pill status-{{ status }}">{{ status }}</span>
+          </div>
+          <p class="tool-card-desc">{{ entry.title }}</p>
         </article>
       </a>
-      <a href="https://github.com/MyThingsLab/my-server" class="animate__animated animate__fadeIn" style="animation-delay:0.2s">
-        <article>
-          <span class="tool-name">MyServer</span>
-          <p class="tool-desc">Read-only HTTP server over the shared ledger.</p>
-        </article>
-      </a>
-      <a href="https://github.com/MyThingsLab/my-archivist" class="animate__animated animate__fadeIn" style="animation-delay:0.3s">
-        <article>
-          <span class="tool-name">MyArchivist</span>
-          <p class="tool-desc">Catalogs a personal book collection.</p>
-        </article>
-      </a>
-      <a href="https://github.com/MyThingsLab/my-bibliography" class="animate__animated animate__fadeIn" style="animation-delay:0.4s">
-        <article>
-          <span class="tool-name">MyBibliography</span>
-          <p class="tool-desc">Resolves DOI/arXiv/ISBN to BibTeX.</p>
-        </article>
-      </a>
-      <a href="https://github.com/MyThingsLab/my-designer" class="animate__animated animate__fadeIn" style="animation-delay:0.5s">
-        <article>
-          <span class="tool-name">MyDesigner</span>
-          <p class="tool-desc">Turns a design brief into a self-contained HTML mockup, like this page.</p>
-        </article>
-      </a>
-      <a href="https://github.com/MyThingsLab/my-librarian" class="animate__animated animate__fadeIn" style="animation-delay:0.6s">
-        <article>
-          <span class="tool-name">MyLibrarian</span>
-          <p class="tool-desc">Runs build-vs-buy surveys before a dependency lands in the fleet.</p>
-        </article>
-      </a>
+      {% endfor %}
     </div>
   </section>
+  {% endif %}
+{% endfor %}
+
+  <p class="top-links">
+    <a href="/">&larr; Back to home</a> &nbsp;·&nbsp; <a href="https://mythingslab.github.io/dashboard">Open live dashboard</a>
+  </p>
 
 </main>
 
-<footer class="site-footer container">
-  <p>
-    MyThingsLab — public, org-owned, isolated from every other venture.
-    <br>
-    <a href="https://mythingslab.github.io/dashboard">Dashboard</a>·
-    <a href="https://github.com/MyThingsLab">GitHub org</a>·
-    <a href="https://github.com/MyThingsLab/my-things-core">my-things-core</a>
-  </p>
+<footer class="container">
+  <small>MyThingsLab — a fleet of small, sharp tools.</small>
 </footer>
 
 </body>
